@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="style.css">
+	<script src="https://kit.fontawesome.com/2666f7d089.js" crossorigin="anonymous"></script>
+	<title>Challenge 1</title>
+</head>
+
+<body>
+	<section class="container">
+		<!--ELEMENTO 1 ENCABEZADO-->
+		<div class="element1 element id=mostrar">
+			<img class="logo" src="img/logo.png" alt="logo alura">
+		</div>
+
+		<!-- ELEMENTO 2 CUADRO 1 -->
+		<div class="element2 element">
+			<textarea type="text" class="input_text" placeholder="Ingrese el texto aquí"></textarea>
+		</div>
+
+		<!-- ELEMENTO 3 CUADRO 2 -->
+		<div class="element3 element" id="esperar">
+			<img class="logo2" src="img/Muñeco.png" alt="logo muñeco alura">
+			<h1 class="texto">Ningún mensaje fue encontrado</h1>
+			<p class="input_text_dos">Ingresa el texto que desees encriptar o desencriptar</p>
+		</div>
+
+
+		<!-- COPIA ELEMENTO 3 CUADRO 2 -->
+		<div class="element3 element no_mostrar" id="resultado">
+
+			<p class="input_text_dos" id="parrafo"></p>
+
+			<button type="button" id="btn_copiar" ; onclick="botoncopiar()">Copiar</button>
+		</div>
+
+
+		<!-- ELEMENTO 4 INSTRUCCIONES Y BOTONES IZQUIERDOS -->
+		<div class="element4 element">
+			<h6 class="instrucciones"><i class="fa-solid fa-circle-exclamation"></i>Solo letras minúsculas y sin acentos
+			</h6>
+
+			<div class="botones_izquierda">
+				<button type="button" id="btn_encriptar" onclick="botonencriptar()">Encriptar</button>
+				<button type="button" id="btn_desencriptar" onclick="botondesencriptar()">Desencriptar</button>
+			</div>
+		</div>
+
+		<!-- ELEMENTO 5 FOOTER -->
+		<div class="element5 element">
+			<p>ORACLE - Challenge #1: Encriptador y desencriptador de texto. Elaborado por Andry Viloria. 2022</p>
+		</div>
+	</section>
+</body>
+<script src="funciones.js"></script>
+
+</html>
